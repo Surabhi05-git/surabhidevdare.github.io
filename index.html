@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html>
 
@@ -6,73 +5,116 @@
 <title>Surabhi Devdare | Portfolio</title>
 
 <style>
-
-body{
-font-family: Arial;
-margin:0;
-background:#0f172a;
-color:white;
-line-height:1.6;
+/* Body & Fonts */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+  line-height: 1.6;
 }
 
-header{
-padding:50px;
-text-align:center;
-background:#020617;
+/* Header */
+header {
+  padding: 50px;
+  text-align: center;
+  background: linear-gradient(to right, #38bdf8, #6366f1);
+  border-radius: 0 0 30px 30px;
+  color: white;
+}
+header h1 {
+  margin: 0;
+  font-size: 42px;
+  color: #facc15;
+}
+header p {
+  margin: 8px;
+  color: #e0e7ff;
+  font-weight: 500;
 }
 
-header h1{
-margin:0;
-font-size:36px;
+/* Sections */
+section {
+  padding: 40px 60px;
 }
 
-header p{
-margin:8px;
-color:#cbd5f5;
+/* Section Titles */
+h2 {
+  border-bottom: 4px solid;
+  border-image: linear-gradient(to right, #38bdf8, #f472b6) 1;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 28px;
 }
 
-section{
-padding:40px 60px;
+/* Project Cards */
+.project {
+  background: #1e293b;
+  padding: 25px;
+  margin: 30px 0;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
 }
 
-h2{
-border-bottom:2px solid #38bdf8;
-padding-bottom:10px;
-margin-bottom:20px;
+/* List Boxes */
+.list-box {
+  background: linear-gradient(135deg, #334155, #1e293b);
+  padding: 15px;
+  border-radius: 12px;
+  margin: 10px 0;
+  transition: transform 0.3s;
+}
+.list-box:hover {
+  transform: scale(1.03);
 }
 
-.project{
-background:#1e293b;
-padding:25px;
-margin:30px 0;
-border-radius:10px;
+/* Links */
+a {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+a:hover {
+  color: #f472b6;
+  text-decoration: underline;
 }
 
-.list-box{
-background:#334155;
-padding:15px;
-border-radius:8px;
-margin:10px 0;
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(to right, #38bdf8, #6366f1);
+  margin-top: 40px;
+  color: #94a3b8;
+  border-radius: 20px 20px 0 0;
 }
 
-a{
-color:#38bdf8;
-text-decoration:none;
-font-weight:bold;
+/* Optional: dashboard style */
+.dashboard {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
 }
-
-a:hover{
-text-decoration:underline;
+.dashboard div {
+  font-size: 18px;
+  font-weight: bold;
+  color: #38bdf8;
 }
-
-.footer{
-text-align:center;
-padding:20px;
-background:#020617;
-margin-top:40px;
-color:#94a3b8;
+.dashboard div span {
+  display: block;
+  font-size: 24px;
+  color: #f472b6;
 }
-
 </style>
 
 </head>
@@ -80,313 +122,107 @@ color:#94a3b8;
 <body>
 
 <header>
-
-<h1>Surabhi Devdare</h1>
-
-<p>Embedded Systems | Automotive Software | C/C++ Developer</p>
-
-<p>C | C++ | Linux | SOME/IP | CAN | Networking | Embedded Systems</p>
-
+  <h1>Surabhi Devdare</h1>
+  <p>Embedded Systems | Automotive Software | C/C++ Developer</p>
+  <p>C | C++ | Linux | SOME/IP | CAN | Networking | Embedded Systems</p>
 </header>
 
 <section>
-
-<h2>About Me</h2>
-
-<p>
-Final year Electronics and Telecommunication Engineering student with strong interest in 
-Embedded Systems, Automotive Middleware and Networking.
-</p>
-
-<p>
-My experience spans Embedded Systems, Networking, Automotive Middleware Development, 
-Communication Protocols, basic PCB design and assembly, and fundamentals of Mechatronics.
-</p>
-
+  <h2>About Me</h2>
+  <p>Final year Electronics and Telecommunication Engineering student with strong interest in Embedded Systems, Automotive Middleware and Networking.</p>
+  <p>My experience spans Embedded Systems, Networking, Automotive Middleware Development, Communication Protocols, basic PCB design and assembly, and fundamentals of Mechatronics.</p>
 </section>
 
 <section>
+  <h2>Projects</h2>
 
-<h2>Projects</h2>
+  <div class="project">
+    <h3>Automotive Middleware Development (CAN to SOME/IP Gateway)</h3>
+    <p>Designed and implemented a communication gateway to integrate traditional automotive CAN networks with modern service-oriented Ethernet architecture using SOME/IP protocol.</p>
+    <h4>Hardware Used</h4>
+    <div class="list-box">
+      <ul>
+        <li>NXP MPC5748G Microcontroller</li>
+        <li>Nvidia Jetson Orin Nano Development Kit</li>
+        <li>CAN Communication Interface</li>
+        <li>Ethernet Connectivity</li>
+      </ul>
+    </div>
+    <h4>Software Used</h4>
+    <div class="list-box">
+      <ul>
+        <li>Linux Operating System</li>
+        <li>Vector CANdb++</li>
+        <li>NXP S32 Design Studio</li>
+        <li>Wireshark Network Analyzer</li>
+        <li>Visual Studio Code</li>
+      </ul>
+    </div>
+    <h4>Technologies</h4>
+    <div class="list-box">
+      <ul>
+        <li>Modern C++ Programming</li>
+        <li>vsomeip Middleware Library</li>
+        <li>Automotive SOME/IP Protocol</li>
+        <li>CAN Communication</li>
+        <li>Service Discovery</li>
+        <li>Socket Programming</li>
+        <li>JSON File Configuration</li>
+      </ul>
+    </div>
+  </div>
 
-<div class="project">
+  <!-- Add other projects the same way -->
+</section>
 
-<h3>Automotive Middleware Development (CAN to SOME/IP Gateway)</h3>
-
-<p>
-Designed and implemented a communication gateway to integrate traditional automotive 
-CAN networks with modern service-oriented Ethernet architecture using SOME/IP protocol.
-</p>
-
-<h4>Hardware Used</h4>
-
-<div class="list-box">
-<ul>
-<li>NXP MPC5748G Microcontroller</li>
-<li>Nvidia Jetson Orin Nano Development Kit</li>
-<li>CAN Communication Interface</li>
-<li>Ethernet Connectivity</li>
-</ul>
-</div>
-
-<h4>Software Used</h4>
-
-<div class="list-box">
-<ul>
-<li>Linux Operating System</li>
-<li>Vector CANdb++</li>
-<li>NXP S32 Design Studio</li>
-<li>Wireshark Network Analyzer</li>
-<li>Visual Studio Code</li>
-</ul>
-</div>
-
-<h4>Technologies</h4>
-
-<div class="list-box">
-<ul>
-<li>Modern C++ Programming</li>
-<li>vsomeip Middleware Library</li>
-<li>Automotive SOME/IP Protocol</li>
-<li>CAN Communication</li>
-<li>Service Discovery</li>
-<li>Socket Programming</li>
-<li>JSON File Configuration</li>
-</ul>
-</div>
-
-</div>
-
-<div class="project">
-
-<h3>Continuous Vehicle Health Monitoring System</h3>
-
-<p>
-Designed an ESP32 microcontroller-based real-time vehicle health monitoring system.
-</p>
-
-<p>
-Monitored vehicle parameters such as tire pressure, engine temperature, battery condition and GPS location.
-</p>
-
-<h4>Hardware Used</h4>
-
-<div class="list-box">
-<ul>
-<li>ESP32 Microcontroller</li>
-<li>Temperature Sensors</li>
-<li>Pressure Sensors</li>
-<li>GPS Module</li>
-</ul>
-</div>
-
-<h4>Technologies</h4>
-
-<div class="list-box">
-<ul>
-<li>Embedded C Programming</li>
-<li>Sensor Interfacing</li>
-<li>IoT Monitoring</li>
-</ul>
-</div>
-
-</div>
-
-<div class="project">
-
-<h3>FPGA Based Digital Logic Interfacing</h3>
-
-<p>
-Designed and implemented digital logic circuits using FPGA development platform.
-</p>
-
-<h4>Hardware Used</h4>
-
-<div class="list-box">
-<ul>
-<li>Xilinx FPGA Development Kit</li>
-</ul>
-</div>
-
-<h4>Software Used</h4>
-
-<div class="list-box">
-<ul>
-<li>Vivado Design Suite</li>
-</ul>
-</div>
-
-<h4>Technologies</h4>
-
-<div class="list-box">
-<ul>
-<li>Verilog HDL</li>
-<li>Digital Logic Design</li>
-<li>FPGA Programming</li>
-</ul>
-</div>
-
-</div>
-
-<div class="project">
-
-<h3>Distance Measuring Machine</h3>
-
-<p>
-Developed a distance measurement system using ultrasonic sensor interfaced with Arduino Uno.
-</p>
-
-<h4>Hardware Used</h4>
-
-<div class="list-box">
-<ul>
-<li>Arduino Uno Microcontroller</li>
-<li>Ultrasonic Sensor</li>
-<li>LCD Display</li>
-</ul>
-</div>
-
-<h4>Software Used</h4>
-
-<div class="list-box">
-<ul>
-<li>Arduino IDE</li>
-</ul>
-</div>
-
-<h4>Technologies</h4>
-
-<div class="list-box">
-<ul>
-<li>Embedded C Programming</li>
-<li>Sensor Interfacing</li>
-<li>Microcontroller Programming</li>
-</ul>
-</div>
-
-</div>
-
-<div class="project">
-
-<h3>Laser Security System</h3>
-
-<p>
-Implemented a security detection system using diode-based laser sensing technology.
-</p>
-
-<h4>Hardware Used</h4>
-
-<div class="list-box">
-<ul>
-<li>Laser Module</li>
-<li>PN Junction Diode</li>
-<li>Buzzer Alarm</li>
-</ul>
-</div>
-
-<h4>Technologies</h4>
-
-<div class="list-box">
-<ul>
-<li>Basic Electronics</li>
-<li>Sensor Based Detection</li>
-<li>Security System Design</li>
-</ul>
-</div>
-
-</div>
-
+<!-- Optional CAN/SOME-IP Dashboard -->
+<section>
+  <h2>Vehicle Data Dashboard</h2>
+  <div class="dashboard">
+    <div>Engine Temp <span>90°C</span></div>
+    <div>Speed <span>65 km/h</span></div>
+    <div>Battery <span>12.3V</span></div>
+  </div>
 </section>
 
 <section>
-
-<h2>Internships</h2>
-
-<div class="project">
-
-<h3>Embedded Product Development Intern</h3>
-<p><b>Semiconware Technologies Pvt. Ltd</b> | July 2025 – Present</p>
-
-<ul>
-<li>Completed assigned technical tasks supporting an automotive middleware project.</li>
-<li>Practiced TCP/UDP socket programming and explored CAN in-vehicle communication.</li>
-<li>Configured vSomeIP JSON files and analyzed service discovery and message flow using Wireshark.</li>
-<li>Building a Server–Client C++ application on Linux environment.</li>
-</ul>
-
-</div>
-
-<div class="project">
-
-<h3>Mechatronics Intern</h3>
-<p><b>TATA IIS, Mumbai</b> | 2 Weeks</p>
-
-<ul>
-<li>Gained practical exposure to Industrial Pneumatics, Electro-Pneumatics and Hydraulics.</li>
-<li>Learned electro-hydraulic control systems used in industrial automation.</li>
-<li>Designed basic PLC based control systems and understood real-world manufacturing processes.</li>
-</ul>
-
-</div>
-
-<div class="project">
-
-<h3>Electronic Intern</h3>
-<p><b>Vishal Electronics, Ghansoli</b> | 1 Month</p>
-
-<ul>
-<li>Assembled printed circuit boards using soldering tools.</li>
-<li>Assisted in wire tinning, terminal making, wiring and PCB stuffing.</li>
-<li>Gained exposure to practical electronic manufacturing processes.</li>
-</ul>
-
-</div>
-
+  <h2>Internships</h2>
+  <div class="project">
+    <h3>Embedded Product Development Intern</h3>
+    <p><b>Semiconware Technologies Pvt. Ltd</b> | July 2025 – Present</p>
+    <ul>
+      <li>Completed assigned technical tasks supporting an automotive middleware project.</li>
+      <li>Practiced TCP/UDP socket programming and explored CAN in-vehicle communication.</li>
+      <li>Configured vSomeIP JSON files and analyzed service discovery and message flow using Wireshark.</li>
+      <li>Building a Server–Client C++ application on Linux environment.</li>
+    </ul>
+  </div>
 </section>
 
 <section>
-
-<h2>Skills</h2>
-
-<div class="list-box">
-
-<ul>
-<li>C Programming</li>
-<li>C++ Programming</li>
-<li>Linux Environment</li>
-<li>Communication Protocols – SOME/IP, CAN, UART</li>
-<li>PCB Design & Assembly</li>
-<li>Networking Fundamentals</li>
-<li>Socket Programming</li>
-</ul>
-
-</div>
-
+  <h2>Skills</h2>
+  <div class="list-box">
+    <ul>
+      <li>C Programming</li>
+      <li>C++ Programming</li>
+      <li>Linux Environment</li>
+      <li>Communication Protocols – SOME/IP, CAN, UART</li>
+      <li>PCB Design & Assembly</li>
+      <li>Networking Fundamentals</li>
+      <li>Socket Programming</li>
+    </ul>
+  </div>
 </section>
 
 <section>
-
-<h2>Links</h2>
-
-<p>
-GitHub :
-<a href="https://github.com/Surabhi05-git">github.com/Surabhi05-git</a>
-</p>
-
-<p>
-LinkedIn :
-<a href="https://www.linkedin.com/in/surabhi-devdare-30652b240">linkedin.com/in/surabhi-devdare-30652b240</a>
-</p>
-
+  <h2>Links</h2>
+  <p>GitHub : <a href="https://github.com/Surabhi05-git">github.com/Surabhi05-git</a></p>
+  <p>LinkedIn : <a href="https://www.linkedin.com/in/surabhi-devdare-30652b240">linkedin.com/in/surabhi-devdare-30652b240</a></p>
 </section>
 
 <div class="footer">
-
-<p>© 2026 Surabhi Devdare | Automotive Embedded Engineer</p>
-
+  <p>© 2026 Surabhi Devdare | Automotive Embedded Engineer</p>
 </div>
 
 </body>
-
 </html>
-```

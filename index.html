@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Surabhi Devdare | Portfolio</title>
+
+<style>
+/* General Styles */
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #0f172a;
+  color: white;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+  padding: 50px;
+  text-align: center;
+  background: #020617;
+  position: relative;
+}
+
+/* Profile photo */
+header img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #f472b6;
+  display: block;
+  margin: 0 auto 15px auto;
+  transition: 0.3s;
+}
+
+header img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(244, 114, 182, 0.6);
+}
+
+/* Header Text */
+header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+header p {
+  margin: 8px;
+  color: #cbd5f5;
+}
+
+/* Navigation Buttons */
+.navbar {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 100;
+}
+
+.navbar a {
+  background: #f472b6;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 25px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  background: #38bdf8;
+  color: black;
+  transform: scale(1.1);
+}
+
+/* Sections */
+section {
+  padding: 60px 80px;
+}
+
+h2 {
+  border-bottom: 2px solid #38bdf8;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Projects / Internships / Skills boxes */
+.project {
+  background: #1e293b;
+  padding: 25px;
+  margin: 30px 0;
+  border-radius: 10px;
+}
+
+.list-box {
+  background: #334155;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+/* Links */
+a {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+  margin-top: 40px;
+  color: #94a3b8;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navigation Buttons -->
+<div class="navbar">
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#internships">Internships</a>
+  <a href="#skills">Skills</a>
+  <a href="#links">Links</a>
+</div>
+
+<header>
+  <!-- Profile Photo -->
+  <img src="profile.jpg" alt="Surabhi Devdare">
+  
+  <h1>Surabhi Devdare</h1>
+  <p>Embedded Systems | Automotive Software | C/C++ Developer</p>
+  <p>C | C++ | Linux | SOME/IP | CAN | Networking | Embedded Systems</p>
+</header>
+
+<section id="about">
+<h2>About Me</h2>
+<p>Final year Electronics and Telecommunication Engineering student with strong interest in Embedded Systems, Automotive Middleware and Networking.</p>
+<p>My experience spans Embedded Systems, Networking, Automotive Middleware Development, Communication Protocols, basic PCB design and assembly, and fundamentals of Mechatronics.</p>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+
+<div class="project">
+<h3>Automotive Middleware Development (CAN to SOME/IP Gateway)</h3>
+<p>Designed and implemented a communication gateway to integrate traditional automotive CAN networks with modern service-oriented Ethernet architecture using SOME/IP protocol.</p>
+<h4>Hardware Used</h4>
+<div class="list-box">
+<ul>
+<li>NXP MPC5748G Microcontroller</li>
+<li>Nvidia Jetson Orin Nano Development Kit</li>
+<li>CAN Communication Interface</li>
+<li>Ethernet Connectivity</li>
+</ul>
+</div>
+<h4>Software Used</h4>
+<div class="list-box">
+<ul>
+<li>Linux Operating System</li>
+<li>Vector CANdb++</li>
+<li>NXP S32 Design Studio</li>
+<li>Wireshark Network Analyzer</li>
+<li>Visual Studio Code</li>
+</ul>
+</div>
+<h4>Technologies</h4>
+<div class="list-box">
+<ul>
+<li>Modern C++ Programming</li>
+<li>vsomeip Middleware Library</li>
+<li>Automotive SOME/IP Protocol</li>
+<li>CAN Communication</li>
+<li>Service Discovery</li>
+<li>Socket Programming</li>
+<li>JSON File Configuration</li>
+</ul>
+</div>
+</div>
+
+<div class="project">
+<h3>Continuous Vehicle Health Monitoring System</h3>
+<p>Designed an ESP32 microcontroller-based real-time vehicle health monitoring system.</p>
+<p>Monitored vehicle parameters such as tire pressure, engine temperature, battery condition and GPS location.</p>
+<h4>Hardware Used</h4>
+<div class="list-box">
+<ul>
+<li>ESP32 Microcontroller</li>
+<li>Temperature Sensors</li>
+<li>Pressure Sensors</li>
+<li>GPS Module</li>
+</ul>
+</div>
+<h4>Technologies</h4>
+<div class="list-box">
+<ul>
+<li>Embedded C Programming</li>
+<li>Sensor Interfacing</li>
+<li>IoT Monitoring</li>
+</ul>
+</div>
+</div>
+
+<!-- Add other projects similarly -->
+
+</section>
+
+<section id="internships">
+<h2>Internships</h2>
+
+<div class="project">
+<h3>Embedded Product Development Intern</h3>
+<p><b>Semiconware Technologies Pvt. Ltd</b> | July 2025 – Present</p>
+<ul>
+<li>Completed assigned technical tasks supporting an automotive middleware project.</li>
+<li>Practiced TCP/UDP socket programming and explored CAN in-vehicle communication.</li>
+<li>Configured vSomeIP JSON files and analyzed service discovery and message flow using Wireshark.</li>
+<li>Building a Server–Client C++ application on Linux environment.</li>
+</ul>
+</div>
+
+<!-- Add other internships similarly -->
+
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="list-box">
+<ul>
+<li>C Programming</li>
+<li>C++ Programming</li>
+<li>Linux Environment</li>
+<li>Communication Protocols – SOME/IP, CAN, UART</li>
+<li>PCB Design & Assembly</li>
+<li>Networking Fundamentals</li>
+<li>Socket Programming</li>
+</ul>
+</div>
+</section>
+
+<section id="links">
+<h2>Links</h2>
+<p>GitHub : <a href="https://github.com/Surabhi05-git">github.com/Surabhi05-git</a></p>
+<p>LinkedIn : <a href="https://www.linkedin.com/in/surabhi-devdare-30652b240">linkedin.com/in/surabhi-devdare-30652b240</a></p>
+</section>
+
+<div class="footer">
+<p>© 2026 Surabhi Devdare | Automotive Embedded Engineer</p>
+</div>
+
+</body>
+</html>

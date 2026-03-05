@@ -23,12 +23,12 @@ header {
   padding: 40px 20px;
   text-align: center;
   background: linear-gradient(90deg, #020617, #0a1f44);
-  position: relative;
 }
 
 header img {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
   border-radius: 50%;
   border: 4px solid #38bdf8;
   margin-bottom: 15px;
@@ -43,23 +43,6 @@ header h1 {
 header p {
   margin: 5px 0;
   color: #cbd5f5;
-}
-
-header .resume-btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 20px;
-  background: #38bdf8;
-  color: #020617;
-  font-weight: bold;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-header .resume-btn:hover {
-  background: #0ea5e9;
-  transform: scale(1.05);
 }
 
 /* --- Sections --- */
@@ -170,30 +153,30 @@ a:hover {
 <body>
 
 <header>
-<img src="profile.jpg" alt="Surabhi Devdare">
+<img src="profile1.jpg" alt="Surabhi Devdare">
 <h1>Surabhi Devdare</h1>
-<p>Embedded Systems | Automotive middleware </p>
+<p>Embedded Systems | Automotive Middleware</p>
 <p>C | C++ | Linux | SOME/IP | CAN | Networking | Embedded Systems</p>
-<a href="Surabhi_Resume.pdf" class="resume-btn" target="_blank"><i class="fas fa-file-download"></i> Download Resume</a>
 </header>
 
-<!-- Floating Navigation -->
+<!-- Floating Navigation with Resume Button -->
 <div class="floating-nav">
   <a href="#about"><i class="fas fa-user section-icon"></i>About</a>
   <a href="#projects"><i class="fas fa-briefcase section-icon"></i>Projects</a>
   <a href="#internships"><i class="fas fa-building section-icon"></i>Internships</a>
   <a href="#skills"><i class="fas fa-lightbulb section-icon"></i>Skills</a>
   <a href="#links"><i class="fas fa-link section-icon"></i>Links</a>
+  <a href="RESUME.pdf" target="_blank"><i class="fas fa-file-download section-icon"></i>Resume</a>
 </div>
 
-<!-- About -->
+<!-- About Section -->
 <section id="about">
 <h2>About Me</h2>
 <p>Final year Electronics and Telecommunication Engineering student with strong interest in Embedded Systems, Automotive Middleware and Networking.</p>
 <p>My experience spans Embedded Systems, Networking, Automotive Middleware Development, Communication Protocols, basic PCB design and assembly, and fundamentals of Mechatronics.</p>
 </section>
 
-<!-- Projects -->
+<!-- Projects Section -->
 <section id="projects">
 <h2>Projects</h2>
 <div class="project">
@@ -231,6 +214,7 @@ a:hover {
 </ul>
 </div>
 </div>
+
 <div class="project">
 <h3>Continuous Vehicle Health Monitoring System</h3>
 <p>Designed an ESP32 microcontroller-based real-time vehicle health monitoring system.</p>
@@ -255,7 +239,7 @@ a:hover {
 </div>
 </section>
 
-<!-- Internships -->
+<!-- Internships Section -->
 <section id="internships">
 <h2>Internships</h2>
 <div class="project">
@@ -288,7 +272,7 @@ a:hover {
 </div>
 </section>
 
-<!-- Skills -->
+<!-- Skills Section -->
 <section id="skills">
 <h2>Skills</h2>
 <div class="list-box">
@@ -304,7 +288,7 @@ a:hover {
 </div>
 </section>
 
-<!-- Links -->
+<!-- Links Section -->
 <section id="links">
 <h2>Links</h2>
 <p>GitHub : <a href="https://github.com/Surabhi05-git">github.com/Surabhi05-git</a></p>

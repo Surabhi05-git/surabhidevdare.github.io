@@ -2,8 +2,6 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Surabhi Devdare | Portfolio</title>
 
 <!-- Font Awesome for icons -->
@@ -28,11 +26,11 @@ header {
 }
 
 header img {
-  width: 180px;
-  height: 180px;
+  width: 350px;
+  height: 377px;
   object-fit: cover;
   border-radius: 50%;
-  border: 4px solid #38bdf8;
+  border: 5px solid #38bdf8;
   margin-bottom: 15px;
 }
 
@@ -82,7 +80,6 @@ h2 {
   margin: 10px 0;
 }
 
-/* --- Links --- */
 a {
   color: #38bdf8;
   text-decoration: none;
@@ -155,9 +152,9 @@ a:hover {
 <body>
 
 <header>
-<img src="profile1.jpg" alt="Surabhi Devdare" width="700" height="754">
+<img src="profile1.jpg" alt="Surabhi Devdare">
 <h1>Surabhi Devdare</h1>
-<p>Embedded Systems | Automotive Software | C/C++ Developer</p>
+<p>Embedded Systems | Automotive Middleware</p>
 <p>C | C++ | Linux | SOME/IP | CAN | Networking | Embedded Systems</p>
 </header>
 
@@ -184,29 +181,136 @@ a:hover {
 <h2>Projects</h2>
 
 <div class="project">
-<h3>Middleware Development for Automotive Industry</h3>
-<p>Implemented a communication gateway to integrate traditional automotive CAN networks with modern service-oriented Ethernet architecture (SOA) using C++ on Linux, SOME/IP protocol, simulating real ECU-to-ECU communication architecture based on industry standards.</p>
+<h3>Middleware Development for Automotive Industry (CAN to SOME/IP Gateway)</h3>
+<p>Implemented a communication gateway to integrate traditional automotive CAN networks with modern service-oriented Ethernet architecture using C++ on Linux, SOME/IP protocol, simulating real ECU-to-ECU communication architecture based on industry standards.</p>
+<h4>Hardware Used</h4>
+<div class="list-box">
+<ul>
+<li>NXP MPC5748G Microcontroller</li>
+<li>Nvidia Jetson Orin Nano Development Kit</li>
+<li>CAN Communication Interface</li>
+<li>Ethernet Connectivity</li>
+</ul>
+</div>
+<h4>Software Used</h4>
+<div class="list-box">
+<ul>
+<li>Linux Operating System</li>
+<li>Vector CANdb++</li>
+<li>NXP S32 Design Studio</li>
+<li>Wireshark Network Analyzer</li>
+<li>Visual Studio Code</li>
+</ul>
+</div>
+<h4>Technologies</h4>
+<div class="list-box">
+<ul>
+<li>Modern C++ Programming</li>
+<li>vsomeip Middleware Library</li>
+<li>Automotive SOME/IP Protocol</li>
+<li>CAN Communication</li>
+<li>Service Discovery</li>
+<li>Socket Programming</li>
+<li>JSON File Configuration</li>
+</ul>
+</div>
 </div>
 
 <div class="project">
 <h3>Continuous Vehicle Health Monitoring System</h3>
 <p>Real-time vehicle health tracking using ESP32, monitoring tire pressure, engine temperature, battery status, and GPS location.</p>
+<h4>Hardware Used</h4>
+<div class="list-box">
+<ul>
+<li>ESP32 Microcontroller</li>
+<li>Temperature Sensors</li>
+<li>Pressure Sensors</li>
+<li>GPS Module</li>
+</ul>
+</div>
+<h4>Technologies</h4>
+<div class="list-box">
+<ul>
+<li>Embedded C Programming</li>
+<li>Sensor Interfacing</li>
+<li>IoT Monitoring</li>
+</ul>
+</div>
 </div>
 
 <div class="project">
 <h3>FPGA Based Digital Logic Interfacing</h3>
-<p>Designed and implemented digital logic circuits using Xilinx FPGA Kit, Verilog HDL and Vivado.</p>
+<p>Designed and implemented digital logic circuits using Xilinx FPGA Kit, Verilog HDL, and Vivado.</p>
+<h4>Hardware Used</h4>
+<div class="list-box">
+<ul>
+<li>Xilinx FPGA Development Kit</li>
+</ul>
+</div>
+<h4>Software Used</h4>
+<div class="list-box">
+<ul>
+<li>Vivado Design Suite</li>
+</ul>
+</div>
+<h4>Technologies</h4>
+<div class="list-box">
+<ul>
+<li>Verilog HDL</li>
+<li>Digital Logic Design</li>
+<li>FPGA Programming</li>
+</ul>
+</div>
 </div>
 
 <div class="project">
 <h3>Distance Measuring Machine</h3>
 <p>Built using ultrasonic sensor, Arduino Uno microcontroller and C programming.</p>
+<h4>Hardware Used</h4>
+<div class="list-box">
+<ul>
+<li>Arduino Uno Microcontroller</li>
+<li>Ultrasonic Sensor</li>
+<li>LCD Display</li>
+</ul>
+</div>
+<h4>Software Used</h4>
+<div class="list-box">
+<ul>
+<li>Arduino IDE</li>
+</ul>
+</div>
+<h4>Technologies</h4>
+<div class="list-box">
+<ul>
+<li>Embedded C Programming</li>
+<li>Sensor Interfacing</li>
+<li>Microcontroller Programming</li>
+</ul>
+</div>
 </div>
 
 <div class="project">
 <h3>Laser Security System</h3>
 <p>Implemented using diode-based laser sensing technology.</p>
+<h4>Hardware Used</h4>
+<div class="list-box">
+<ul>
+<li>Laser Module</li>
+<li>PN Junction Diode</li>
+<li>Buzzer Alarm</li>
+</ul>
 </div>
+<h4>Technologies</h4>
+<div class="list-box">
+<ul>
+<li>Basic Electronics</li>
+<li>Sensor-Based Detection</li>
+<li>Security System Design</li>
+</ul>
+</div>
+</div>
+
 </section>
 
 <!-- Internships Section -->
@@ -217,10 +321,10 @@ a:hover {
 <h3>Embedded Product Development Intern</h3>
 <p><b>Semiconware Technologies Pvt. Ltd</b> | July 2025 – Present</p>
 <ul>
-<li>Completed assigned technical tasks to support an automotive middleware project</li>
-<li>Practiced TCP/UDP socket programming and explored CAN in-vehicle communication</li>
-<li>Configured vSomeIP JSON files and analyzed service discovery and message flow using Wireshark</li>
-<li>Building a Server–Client C++ application on Linux</li>
+<li>Completed assigned technical tasks to support an automotive middleware project.</li>
+<li>Practiced TCP/UDP socket programming and explored CAN in-vehicle communication.</li>
+<li>Configured vSomeIP JSON files and analyzed service discovery and message flow using Wireshark.</li>
+<li>Building a Server–Client C++ application on Linux.</li>
 </ul>
 </div>
 
@@ -228,8 +332,8 @@ a:hover {
 <h3>Mechatronics Intern</h3>
 <p><b>TATA IIS, Mumbai</b> | 2 Weeks</p>
 <ul>
-<li>Gained practical knowledge in Industrial Pneumatics, Electro pneumatics, Hydraulics, Electrohydraulic</li>
-<li>Designed basic PLC based control systems and understood real-world manufacturing process</li>
+<li>Gained practical exposure to Industrial Pneumatics, Electro-Pneumatics, Hydraulics, Electrohydraulic.</li>
+<li>Designed basic PLC-based control systems and understood real-world manufacturing processes.</li>
 </ul>
 </div>
 
@@ -237,10 +341,12 @@ a:hover {
 <h3>Electronic Intern</h3>
 <p><b>Vishal Electronics, Ghansoli</b> | 1 Month</p>
 <ul>
-<li>Assembled printed circuit boards using soldering tools and gained exposure</li>
-<li>Assisted in wire tinning, terminal making, wiring and PCB stuffing for efficient circuit connections</li>
+<li>Assembled printed circuit boards using soldering tools.</li>
+<li>Assisted in wire tinning, terminal making, wiring, and PCB stuffing.</li>
+<li>Gained exposure to practical electronic manufacturing processes.</li>
 </ul>
 </div>
+
 </section>
 
 <!-- Skills Section -->
@@ -280,7 +386,7 @@ a:hover {
 </div>
 
 <script>
-// --- Show sections with fade-in on scroll ---
+// --- Fade-in sections on scroll ---
 const sections = document.querySelectorAll('section, .project');
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {

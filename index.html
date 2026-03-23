@@ -93,6 +93,26 @@ border:1px solid rgba(56,189,248,0.2);
 transition:all 0.35s ease;
 }
 
+.project-images{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+margin-top:15px;
+}
+
+.project-images img{
+width:100%;
+max-width:260px;
+border-radius:10px;
+border:1px solid rgba(56,189,248,0.3);
+transition:0.3s;
+}
+
+.project-images img:hover{
+transform:scale(1.05);
+box-shadow:0 10px 25px rgba(56,189,248,0.4);
+}
+
 .project:hover{
 transform:translateY(-8px);
 box-shadow:0 15px 40px rgba(56,189,248,0.35);
